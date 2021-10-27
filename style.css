@@ -1,0 +1,261 @@
+.songItem {
+    display: flex;
+    margin-top: 0%;
+    width: max-content;
+    transition: ease-in-out;
+    transition-duration: 0.25s;
+    margin-left: 1px;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* overflow-wrap: break-word; */
+    /* overflow: hidden; */
+    margin-left: 0rem;
+    align-items: center;
+}
+
+.attribution {
+    flex-wrap: wrap;
+    display: flex;
+    width: 54rem;
+}
+
+.far {
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.far:hover {
+    cursor: pointer;
+    color: rgb(139, 139, 133);
+    transform: scale(1.05);
+    text-shadow: 1px 1px black;
+}
+
+.fas {
+    cursor: pointer;
+    color: white;
+}
+
+.fas:hover {
+    cursor: pointer;
+    color: rgb(139, 139, 133);
+    transform: scale(1.05);
+    text-shadow: 1px 1px black;
+}
+
+.fa-3x {
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    text-shadow: 1px 2px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls-and-seekbaar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    width: 88spx;
+}
+
+.songItem:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+.playing {
+    margin-left: 53%;
+    width: 84px;
+    height: auto;
+    align-self: baseline;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+/*.container::before {
+    content: ".";
+    background-image: url(../static/bg.jpg);
+    background-color: black;
+    height: 83vh;
+    width: 96vw;
+    display: block;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+
+.container {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(2px);
+    contain: content;
+    object-fit: contain;
+    content: ".";
+    background-image: url(./src/bg.jpg);
+    background-color: black;
+    height: 83vh;
+    width: 96vw;
+    display: block;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.container {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.songs {
+    z-index: 1;
+    width: 95%;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    top: -4rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gify {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+#player {
+    z-index: 10000000;
+    width: 100vw;
+    height: 13vh;
+    background-color: black;
+    position: -webkit-sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    contain: content;
+    object-fit: contain;
+}
+
+#play-player {
+    size: 10%;
+}
+
+.footer-title {
+    position: relative;
+    color: aliceblue;
+    float: left;
+    margin-left: 0rem;
+    margin-right:0rem;
+    display: flex;
+    flex-direction: column;
+}
+#footer-title {
+    position: relative;
+    color: aliceblue;
+    float: left;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    border-right-style: outset;
+    align-self: center;
+    border-width: thin;
+    line-height: 68px;
+    padding-right: 1rem;
+}
+
+#footer-text {
+    overflow: auto;
+    display: flex;
+    word-wrap: normal;
+}
+
+.topSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.controls {
+    color: white;
+    display: flex;
+}
+
+#myProgressBar {
+    width: 70vw;
+}
+@media only screen and (max-width: 1200px){
+    .cardone {
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+        position: relative;
+        left: -58.5rem;
+    }
+    .songs{
+        margin-left: 0px;
+        width: 100%;
+        object-fit: contain;
+    }
+    #footer-title{
+        line-height: 14px;
+    }
+    .songItem:hover {
+        transform: scale(1.05);
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
